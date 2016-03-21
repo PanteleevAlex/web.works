@@ -1,0 +1,51 @@
+#.clearfix{
+#	clear:both;
+#}
+#slider{
+	width: 900px;
+	height:400px;
+	display: block;
+	-webkit-box-shadow 0px 0px 10px rgba(0,0,0,1);
+	-moz-box-shadow 0px 0px 10px rgba(0,0,0,1);
+	box-shadow 0px 0px 10px rgba(0,0,0,1);
+	margin: 30px auto;
+}
+#container{
+	width: 604px;
+	height: 403px;
+	background: #ccc;
+	float: left;
+	display: block;
+	overflow: auto;
+	border: 3px solid red;
+	margin-left: 90px;
+}
+.back{
+	width: 70px;
+	height:400px;
+	background: url(../img/back.png);
+	background-position:center center;
+	background-repeat: no-repeat;
+	float: left;
+	display: block;
+	z-index: 99;
+	position: relative;
+}
+.next{
+	width: 70px;
+	height:400px;
+	background: url(../img/next.png);
+	background-position:center center;
+	background-repeat: no-repeat;
+	float: right;
+	display: block;
+	z-index: 99;
+	position: relative;
+}
+.images{
+	width: 604px;
+	height:403px;
+	overflow: hidden;
+	float: left;
+	position: absolute;
+}

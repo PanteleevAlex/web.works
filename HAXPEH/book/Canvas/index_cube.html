@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>canvasExample</title>
+	<script src="jquery-1.11.3.min.js"></script>
+        <meta charset='utf-8' />
+        <script>
+	window.onload = function(){
+var canvas = document.getElementById('mycanvas');
+var ctx = canvas.getContext('2d');
+
+var drawRoundedRect = function(ctx, x, y, w, h, cr){
+	ctx.beginPath();
+	ctx.moveTo(x + w / 2, y);
+	ctx.arcTo(x + w, y, x + w, y + h, cr);
+	ctx.arcTo(x + w, y + h, x, y + h, cr);
+	ctx.arcTo(x, y + h, x, y, cr);
+	ctx.arcTo(x, y, x + w, y, cr);
+	ctx.closePath();
+	ctx.stroke();
+};//end drawRoundedRect
+	var cr = 0;
+	for (x = 0; x < 500; x += 100) {
+	   drawRoundedRect(ctx, x + 5, 
+		ctx.canvas.height / 2 - 45, 90, 90, cr);
+	   cr += Math.PI * 2;
+}//end for.
+}//end window.onload.
+        </script>
+<style>
+a{
+	margin: 20px  190px;
+}
+#mycanvas{
+	border: 1px solid;
+}
+</style>
+    </head>
+    <body>
+<a href="../index.html">| НА ГЛАВНУЮ |</a>
+<hr>
+<br>
+<canvas id='mycanvas' width=500, height=500>Обновите браузер</canvas>
+    </body>
+</html>

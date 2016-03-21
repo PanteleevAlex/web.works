@@ -1,0 +1,52 @@
+<!--
+-->
+<html> 
+<head>
+<meta charset="utf-8">
+<title>jQuery goes to DOM-ville</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script>
+		$(document).ready(function(){
+
+$("#clickMe").click(function(){
+$("img").fadeIn(1000);
+$("#picframe").slideToggle("slow");
+
+});
+});
+</script>
+
+	<style>
+#body{
+	width:960px;
+	height: 600px;
+	margin: 0 auto;
+}
+#clickMe{
+	padding: 10px  200px 10px;
+	border: 2px  solid black;
+	width: 200px;
+	height:50px;
+	text-align: center;
+}
+a{
+	margin-left: 750px;
+	margin-top:  20px;
+}
+	</style>
+
+</head>
+	<body>
+		<a href="../index.html">| НА ГЛАВНУЮ |</a><br>
+		<div id="body">
+<div id="clickMe">Show me the Furry Fiend of the Day</div>
+<div id="picframe">
+	<br>
+
+	<img src="furry_riend.jpg" alt="images" title="Изображение">
+
+</div>
+</div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>canvasExample</title>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <meta charset='utf-8' />
+    </head>
+    <body>
+<a href="../index.html">| НА ГЛАВНУЮ |</a>
+<br>
+<canvas id='example'>Обновите браузер</canvas>
+
+        <script>
+		var example = document.getElementById('example');
+		ctx = example.getContext('2d');
+	    example.height = 500;
+            example.width  = 500;
+	ctx.beginPath();
+	ctx.moveTo(20,20);
+	ctx.lineTo(470,20);
+	ctx.lineTo(20,470);
+	ctx.fill();
+	ctx.beginPath();
+	ctx.moveTo(480,30);
+	ctx.lineTo(480,480);
+	ctx.lineTo(30,480);
+	ctx.closePath();
+	ctx.stroke();
+
+        </script>
+    </body>
+</html>

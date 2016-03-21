@@ -1,0 +1,13 @@
+.site{
+	width: 100px;
+	height: 960px;
+	border: 1px solid black;
+	background:  #eee;
+	margin: 0 auto;
+}
+.body{
+	width: 1190px;
+	height: 70px;
+	color:  #fff;
+	border: 1px solid black;
+}

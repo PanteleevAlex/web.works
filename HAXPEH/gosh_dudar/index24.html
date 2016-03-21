@@ -1,0 +1,31 @@
+<!--
+https://goo.gl/kUe1Xf
+
+-->
+<html> 
+<head>
+<meta charset="utf-8">
+<title>jQuery</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+$("#img").bind("click", function(event){
+$(event.target).parent().css("text-align", "center");
+$(event.target).animate({
+	width: $(event.target).width() * 5,
+	height: $(event.target).height() * 5,
+}, 3000);
+});
+});
+
+
+</script>
+</head>
+	<body>
+<p id="test">
+	<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-yY_K23bIgVflLrSZHbystD9VjG2ph-9RbsrEeOJZw55yB2QcNA" alt="Изображение" title="Изображение" id="img" width="200px">
+</p>
+	</body>
+</html>

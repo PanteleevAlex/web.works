@@ -1,0 +1,34 @@
+/*-------------------
+https://goo.gl/U0spHp
+_____________________
+knowcity
+---------------------*/
+*{margin: 0; padding: 0;}
+ul {list-style-type: none;}
+.menu_item {
+	display:    inline-block;
+	width:             100px;
+	height:             20px;
+	margin:		    10px;
+	padding:            10px;
+	background:         #ccc;
+	overflow:         hidden;
+	float:              left;
+}
+.menu_item:hover {
+	background:    #aaa;
+	overflow:   visible;
+	cursor:     pointer;
+}
+.menu_item ul {margin-top: 10px;}
+.drop_item{
+	background:    #aaa;
+	padding:       10px;
+	width:        100px;
+	margin-left:  -10px;
+}
+.month{
+	font-family: Roboto;
+	font-size:     16px;
+	padding-left:  10px;
+}

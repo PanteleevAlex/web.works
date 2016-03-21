@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+	background-color: #eee;
+}
+.finder{
+	width:  700px;
+	height: 400px;
+	background-color: white;
+	border: 1px solid black;
+	margin: 0 auto;
+	margin-top: 100px;
+	border-radius: 6px;
+}
+.shadow{
+	box-shadow: 0 0 10px #eee;
+	padding:  10px;
+}
+.toolbars{
+	width: 700px;
+	height: 32px;
+	border: 1px solid black;
+	border-radius:  6px 6px 0 0;
+	margin-left: -1px;
+	background:#eee url(../images/toolbars.png);
+	clear: both;
+} 
+.status-bar{
+
+	width: 700px;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: -1px;
+	border: 1px solid black;
+	border-radius:  0;
+}
+.red{
+	position:relative;	
+	bottom: 7px;
+}
+.orange{
+	position:relative;	
+	left:-5px;
+	bottom: 7px;
+}
+.green{
+	position:relative;	
+	left:-10px;
+	bottom: 7px;
+}
+.icon-fin{
+	position:relative;
+	left: 35%;
+	top: 2px;
+}
+.library{
+	font-family:Helvetica Neue, Ubuntu Roboto; 
+	font-size: 21px;	
+	position:relative;
+	left: 35%;
+	bottom: 5px;
+}

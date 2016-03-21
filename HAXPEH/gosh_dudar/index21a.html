@@ -1,0 +1,21 @@
+<!--
+-->
+<html> 
+<head>
+<meta charset="utf-8">
+<title>jQuery</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script>
+
+var str = "Завтрак в 09:00";
+
+alert(str .match(/[А-Яа-я]*\s.\s\b[^1-9][8-9]:[^1-9][^1-9]/g));
+/*
+alert(str .match(/[^A-Za-z]*\s.\s\b[^1-9][8-9]:[^1-9][^1-9]/g));
+alert(str .match(/[0-1][8-9].[0-1][0-1]/g));
+alert(str .replace(/\d\d:\d\d/g, '09 часов 00 мин'));
+*/
+</script>
+	</body>
+</html>

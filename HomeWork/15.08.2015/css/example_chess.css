@@ -1,0 +1,97 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+#chess {
+	width:850px;
+	margin:10px auto;
+}
+
+#chess ul {
+	clear:both;
+}
+
+#chess li {
+	float:left;
+	width:100px;
+	height:100px;
+	text-align:center;
+	list-style:none;
+	line-height:50px;
+	font-size:22px;
+	background:#d9b489;
+}
+
+#chess li.dark {
+	background:#604423;
+}
+
+#chess li.letter {
+	height:49px;
+	border-bottom:1px solid #412E18;
+}
+#chess li.letter:first-child {
+	height:49px;
+	width:49px;
+}
+
+#chess li.number {
+	width:49px;
+	line-height:100px;
+	border-right:1px solid #412E18;
+}
+
+#chess li.figure {
+	background-image:url(chess.png);
+}
+
+#chess li.w_spawn {
+	background-position:-500px 0;
+}
+
+#chess li.w_tower {
+	background-position:-400px 0;
+}
+
+#chess li.w_knight {
+	background-position:-300px 0;
+}
+
+#chess li.w_bishop {
+	background-position:-200px 0;
+}
+
+#chess li.w_quin {
+	background-position:-100px 0;
+}
+
+#chess li.w_king {
+	background-position:0 0;
+}
+
+
+
+#chess li.b_spawn {
+	background-position:-500px -100px;
+}
+
+#chess li.b_tower {
+	background-position:-400px -100px;
+}
+
+#chess li.b_knight {
+	background-position:-300px -100px;
+}
+
+#chess li.b_bishop {
+	background-position:-200px -100px;
+}
+
+#chess li.b_quin {
+	background-position:-100px -100px;
+}
+
+#chess li.b_king {
+	background-position:0 -100px;
+}

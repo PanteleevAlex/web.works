@@ -1,0 +1,76 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background:#036 url(../images/bg.jpg) fixed center center;
+	background-size:cover;
+}
+.dock {
+	position:fixed;
+	bottom:0;
+	width:1274px;
+	left:50%;
+	margin-left:-637px;
+}
+.dock-left {
+	width:251px;
+	height:240px;
+	background:url(../images/dock-left.png) no-repeat;
+	float:left;
+}
+.dock-right {
+	width:251px;
+	height:240px;
+	background:url(../images/dock-right.png) no-repeat;
+	float:left;
+}
+.dock-middle {
+	height:240px;
+	background:url(../images/dock-middle.png);
+	float:left;
+}
+.dock-middle a {
+	display:block;
+	float:left;
+	margin:0 5px;
+	position:relative;
+	top:30px;
+	width:100px;
+	transition:all 500ms ease;
+}
+.dock-middle a img {
+	width:1.0;
+}
+.dock-middle a:hover {
+	transform:scale(1.2);
+}
+
+.fa fa-home{
+       margin-left:  570px;
+       margin-top:   20px;
+	text-align:  center;
+	opacity:0.3;
+}
+.fa fa-home:hover{
+       margin-left:  570px;
+       font-family:  Roboto;
+       font-size:    21px;
+       font-weight: bold;
+       margin-top:   20px;
+       text-align:  center;
+	color:    aqua;
+	text-decoration: underline;
+	opacity: 1.0;
+}
+.home-a{
+       margin-top:   20px;
+       text-align:  center;
+	opacity:0.3;
+}
+
+.home-a:hover{
+       margin-top:   20px;
+       text-align:  center;
+}

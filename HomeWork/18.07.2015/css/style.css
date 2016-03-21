@@ -1,0 +1,67 @@
+.block-head{
+	width:    1200px;
+	height:   160px;
+	border:   1px solid black;	
+	margin:   0  auto;
+	background: url(../images/block-head.png);
+}
+.TBAPb{
+	width:      1200px;
+	height:	    800px;
+	border:     1px solid black;
+	margin:     0  auto;
+	background: url(../images/europe.png);
+	background-repeat: no-repeat;
+	background-position:  center;
+	background-color:     #456B4F;
+}
+h1{
+	text-align:  center;
+	margin-top:  20px;
+	font-family: Roboto;
+	color:       #020340;
+}
+.home{
+       margin-left:  535px;
+       font-family: Roboto;
+       font-size:   20px;
+}
+.fa-home{
+       margin-left:  520px;
+       font-family:  Roboto;
+       font-size:    25px;
+       margin-top:   10px;
+}
+.eng1{
+	margin-left:   810px;
+	margin-top:   -445px;
+	font-size:     27px;
+	/*box-shadow:   #789 3px 3px 5px;*/
+}
+
+.eng2{
+	margin-left:   800px;
+	margin-top:   -95px;
+	font-size:     27px;
+	/*box-shadow:   #789 3px 3px 5px;*/
+}
+
+.eng{
+	margin-left:   820px;
+	margin-top:    60px;
+	font-size:     34px;
+}
+
+.eng3{
+	margin-left:   770px;
+	margin-top:   -40px;
+	font-size:     37px;
+	font-weight:   bold;
+}
+
+.italy{
+	margin-left:  917px;
+	margin-top:   -88px;
+	font-size:     37px;
+	font-weight:   bold;
+}

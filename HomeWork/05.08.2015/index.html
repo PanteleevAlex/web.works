@@ -1,0 +1,57 @@
+<!--
+	
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Документ без названия</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="nivo/nivo-slider.css" type="text/css">
+<link rel="stylesheet" href="nivo/themes/default/default.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+<script src="nivo/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider();
+});
+</script>
+</head>
+
+<body>
+	<div class="wrapper">
+   <a href="../../../../index.html" class="fa fa-home">| НА ГЛАВНУЮ |</a>  
+    	<header></header>
+        
+        <nav></nav>
+        
+        <div class="slider-wrapper theme-default">
+        	<div class="ribbon"></div>
+            <div id="slider" class="nivoSlider">
+            
+                <a href="#"><img src="images/nemo.jpg"></a>
+                <img src="images/toystory.jpg" title="Описание">
+                <img src="images/up.jpg" title="#img3">
+                <img src="images/walle.jpg">
+            
+            </div>
+            <div class="nivo-caption" id="img3">
+            	<b>HTML</b>-<i>описание</i>
+            </div>
+        </div>
+        
+        <section></section>
+        
+        <aside></aside>
+        	
+            <div class="clearfix"></div>
+            
+        <footer></footer>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="style3.css" rel="stylesheet" type="text/css">
+</head>
+	<body>
+		<a href="../../../../index.html"><b>| НА ГЛАВНУЮ |</b></a>
+		<br>
+		<a href="index.html"><b>| ВОЗВРАТ К ЗАДАНИЮ №2 |</b></a>	
+<script>
+var name = prompt("Введите ваше имя");
+while(!isNaN(name)){
+	name = prompt("Введите вашу имя");
+}
+var answer = confirm("Вы любите яблоки?");
+var answer = confirm("Вы любите бананы?");
+var answer = confirm("Вы любите арбузы?");
+var answer = confirm("Вы любите апельсины?");
+var answer = confirm("Вы любите мандарины?");
+
+	function pro(){
+	var res = answer;	
+	var k=1;
+	var n=5;
+	while(k<n){
+	res+=k;
+	k++;
+}
+	//return res;
+	return '<h2>' + res + '</h2>';	
+}
+document.write("<br> "+name+"  Вы получили" /* +" "+ */ +pro());
+</script>
+
+
+	</body>
+</html>

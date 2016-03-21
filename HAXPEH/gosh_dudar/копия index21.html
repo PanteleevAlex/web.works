@@ -1,0 +1,39 @@
+<!--
+https://goo.gl/2L3OnU
+Не получилось не работает.
+Не отправляет комент и не добавляет в "конец".
+-->
+<html> 
+<head>
+<meta charset="utf-8">
+<title>jQuery</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$(document).on("click", "#add_comment", function(){
+	var form = $("form[name='form']");
+	form.css("display", "block");
+	$("#add_comment").replaceWith(form);
+});
+	$(document).on("click", "input[name='send']", function(){
+		var comment = $("textarea[name='comment']").val();
+		alert("Подождите идет загрузка комментариев...");
+		$("<p>" + comment + "</p>").appendTo("#comments");
+});
+});
+</script>
+</head>
+	<body>
+  <div id="comments">
+<p>Комментарий №1</p>
+<p>Комментарий №2</p>
+<p>Комментарий №3</p>
+  </div>
+<form name="form" action="#" method="post" id="form" style="display:none" onsubmit="return false">
+<textarea id="textarea" name="comment" cols="30" rows="10"></textarea><br>
+<br>
+<input type="submit" name="sedn" value="Добавить комментарий" id="done">
+</form>
+<a href="#"onclick="return false" id="add_comment">Добавить комментарий</a>
+	</body>
+</html>

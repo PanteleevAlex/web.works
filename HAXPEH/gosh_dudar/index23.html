@@ -1,0 +1,44 @@
+<!--
+https://goo.gl/lz720l
+-->
+<html> 
+<head>
+<meta charset="utf-8">
+<title>jQuery</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script>
+
+	function hideComments(){
+	  $("#comments").hide(1000, function(){
+		$("#hide").hide();
+		$("#show").show();
+	});
+}
+	function showComments(){
+	  $("#comments").show(1000, function(){
+		$("#hide").show();
+		$("#show").hide();
+	});
+}
+
+$(document).ready (function(){
+	$("#hide").bind("click", hideComments);
+	$("#show").bind("click", showComments);
+});
+
+</script>
+</head>
+	<body>
+	
+	<a href="#" id="hide" onclick="return false">Скрыть комментарий</a>
+	<a href="#" id="show" style="display:none" onclick="return false">Показать комментарий</a>
+
+  <div id="comments">
+<p>Комментарий №1</p>
+<p>Комментарий №2</p>
+<p>Комментарий №3</p>
+  </div>
+
+	</body>
+</html>

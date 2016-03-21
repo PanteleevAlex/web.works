@@ -1,0 +1,66 @@
+*{
+	margin:  0;
+	padding: 0;
+}
+h1{
+	text-align: center;
+	padding: 20px;
+}
+body{
+	/*background-color: #ddd;*/
+	background:rgba(250, 250, 250, 0.3);
+}
+#body{
+	width: 1500px;
+	height:1000px;
+	margin: 0 auto;
+	background-image:url(furry_riend.jpg);
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+#header{
+	width: 1500px;
+	height:80px;
+	border: 2px solid black;
+	border-bottom: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	/*background-color: #aaa;*/
+	margin: 0 auto;
+}
+.menu_item{
+	display:inline-block;
+	width: 100px;
+	height: 10px;
+	padding: 14px;
+	margin: 150px 5px 0px 150px;
+	background: #ccc;
+	overflow: hidden;
+	float:left;
+	opacity: 1.0;
+}
+.menu_item:hover{
+	background: #aaa;
+	overflow:visible;
+}
+.drop_item{
+	background: #aaa;
+	padding: 10px 0;
+	width:  100px;
+	margin-left: -10px;
+}
+.menu_item ul{
+	margin-top:  5px;
+}
+ul{
+	list-style-type:none;
+}
+.task{
+	font-family: Roboto;
+	font-size:   16px;
+	padding-left: 10px;
+	color: red;
+}
+a{
+	padding: 3px;
+}

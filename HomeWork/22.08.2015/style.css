@@ -1,0 +1,26 @@
+#frame {
+	width:1100px;
+	height:800px;
+	border:1px solid #999;
+	position:relative;
+	margin:20px auto;
+}
+
+#ball {
+	background: url(ball.png);
+	background-size:cover;
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+a{
+	margin-left: 430px;
+	opacity: 0.2;
+}
+/*
+a:hover{
+	margin-left: 430px;
+	opacity: 1.0;
+}

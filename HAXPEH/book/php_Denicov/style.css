@@ -1,0 +1,21 @@
+.body{
+	width:  1000px;
+	height: 700px;
+	border: 1px solid black;
+	margin: 0 auto;
+	background-color: lightgrey;
+}
+h1{
+	text-align: center;
+}
+p{
+	text-align:  center;
+	font-size:   18px;
+	font-weight: bold;	
+}
+.php{
+	text-align:  center;
+	margin:      0 auto;
+	font-size:   18px;
+	font-weight: bold;	
+}

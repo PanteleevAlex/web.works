@@ -1,0 +1,192 @@
+.site{
+	width: 1200px;
+	height: 0 auto;
+	background-color:  white;
+	margin: 0 auto;
+	box-shadow:  0 0 30px rgba(0,0,0,0.5);
+	padding:  10px;
+}
+.clearfix{
+	clear:both;
+}
+.body{
+	width: 1200px;
+	height: 25px;
+	background-color:  white;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+/* начало самого верхнего блока с логотипом. Я не знаю почему, но если убрать border "Контакты" сдвигаются.*/
+.div_li{
+	font: 16px Ubuntu, Helvetica, Arial;
+	color: #333;
+	list-style-type: none;
+	border: 1px solid white;
+}
+.ul_list{
+	margin-top: 50px;
+	margin-left:170px;
+	width: 900px;
+	position:relative;
+	text-decoration: none;
+}
+.logo{
+	position:relative;
+	padding-left: 650px;
+	width: 122px;
+	height: 95px;
+}
+li{
+	display: inline-block;
+	padding-left:   60px;
+}
+.call{
+	font: 16px Ubuntu, Helvetica, Arial;
+	color: #333;
+	float: right;
+	margin-top: 10px;
+	margin-right: 90px;
+	position:relative;
+}
+.company{
+	font: 20px;
+	color: #03629a;
+	position:relative;
+	margin-left: 550px;
+	margin-top: 70px;
+}
+/* здесь заканчивается блок со списком и логотипом*/
+
+/*Начало div_а  в котором размещается фото дома с отделкой под дерево*/
+.div_img{
+	background-image: url(../img/home1.jpg);
+	background-position: center;
+	width: 1200px;
+	height: 150px;
+}
+
+/* Блок с текстом из двух обзацев*/
+.div_p{
+	width: 900px;
+	height:200px;
+	margin-left: 170px;
+	margin-top: 70px;
+	font: 16px Ubuntu, Helvetica, Arial;	
+}
+.img_p{
+	font:  20px Ubuntu, Helvetica, Arial;
+	margin-left: 370px;
+}
+.footer{
+	width:  1200px;
+	height: 0 auto;
+	margin-top: 200px;
+	background-color:  #016295;
+}
+.div_p_II{
+	width: 900px;
+	height:400px;
+	margin-left: 170px;
+	margin-top: 70px;
+	font: 16px Ubuntu, Helvetica, Arial;	
+}
+.home_img{
+	width: 30px;
+}
+.div_home{
+	padding-left: 100px;
+	padding-top:  30px;
+	color:white;	
+	width: 40px;
+	float:left;
+	font: 16px Ubuntu, Helvetica, Arial;	
+
+}
+.phone_span{
+	width: 30px;
+}
+.div_phone{
+	padding-left: 300px;
+	padding-top:  30px;
+	color:white;	
+	float:left;
+	font: 16px Ubuntu, Helvetica, Arial;	
+}
+.3H{
+	padding-left:10px;
+	padding-top: 20px;
+}
+.envelope{
+	padding-left: 400px;
+	padding-top:  20px;
+	color:white;
+	font-size: 30px;	
+}	
+.sdp{
+	padding-left: 400px;
+	padding-top:  20px;
+	color:white;
+	font: 16px Ubuntu, Helvetica, Arial;	
+}
+/*Текст с position:absolute... */
+.div_p_II{
+	font: 20px Ubuntu, Helvetica, Arial;	
+	width: 850px;
+	height:100px;
+	margin-left: 200px;
+}
+/*Текств с JavaScript*/
+p{
+	font-size:  16px;
+	font-family: Roboto, Ubuntu, Helvetica, Arial;
+	font-size:   16px;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+.div_vk{
+	width:  200px;
+	height: auto;
+	margin-left: 450px;
+}
+.China, .decline, .island{
+	display: none;
+}
+.footer_table{
+	width: 100%;
+	font: 16px Ubuntu, Helvetica, Arial;
+	color: white;
+}
+.td_home{
+	width: 50px;
+	height:220px;
+}
+.td_phone{
+	width: 50px;
+	font: 16px Ubuntu, Helvetica, Arial, white;
+}
+.td_envelope{
+	width: 50px;
+}
+.fa.fa-envelope-o{
+	font-size: 30px;
+}
+.home_img{
+	width: 30px;
+}
+           /* Самый низ footer*/
+
+.td_OOO{
+	width: 1200px;
+	height: 30px;
+	background-color:#004f78; 
+}
+.p_OOO{
+	font: 16px Ubuntu, Helvetica, Arial;	
+	color: white;
+	padding-bottom: 20px;
+}
+
+.phone_span{
+	width: 30px;
+}
+          /*end самый низ footer*/

@@ -1,0 +1,257 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+	background-color: #eee;
+}
+.finder{
+	width:  700px;
+	height: 400px;
+	background-color: white;
+	border: 1px solid black;
+	margin-bottom:  180px;
+	margin-left: 260px;
+	border-radius: 6px;
+	box-shadow: 20px 15px 15px rgba(0,0,0,.35),inset 0 5px 0 rgba(255,255,255,.6);
+	opacity: 0.0;
+}
+.finder:hover{
+	opacity: 1.0;
+}
+.icon_finder> .finder:hover{
+	opacity: 1.0;
+}
+.toolbars{
+	width: 700px;
+	height: 32px;
+	border: 1px solid black;
+	border-radius:  6px 6px 0 0;
+	margin-left: 0;
+	background:#eee url(../images/toolbars.png);
+	clear: both;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 15px ridge #888;
+	box-shadow:  0 1px 10px rgba(0,0,0,.25);
+	position:relative;
+} 
+.status-bar{
+	width: 700px;
+	height: 29px;
+	margin-top: 0;
+	margin-left: 0;
+	border: 1px solid black;
+	border-radius:  0;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 3px ridge #eee;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	box-shadow:  0 1px 10px rgba(0,0,0,.25);
+	background-color: #eee;
+	position:relative;	
+}
+.red{
+	position:relative;	
+	bottom:-1px;
+	float: left;
+	width: 26px; 
+	height: 24px;
+}
+.orange{
+	position:relative;	
+	left:-9px;
+	bottom:-1px;
+	float: left;
+	width: 26px; 
+	height: 24px;
+}
+.green{
+	position:relative;	
+	left:-16px;
+	bottom: -1px;
+	float: left;
+	width: 26px; 
+	height: 24px;
+}
+.icon-fin{
+	position:relative;
+	left: 35%;
+	top: 2px;
+}
+.library{
+	font-family:Ubuntu, Roboto; 
+	font-size: 21px;	
+	position:relative;
+	left: 35%;
+	bottom: 5px;
+}
+.bar-max-min{
+   	width:  136px; 
+	height: 20px; 
+	float:  right;
+	padding-top: 2px;
+	opacity: 0.5;
+}
+.folder-icon01{
+	width:  72px;
+	height: 72px;
+	position:absolute;
+	float: left;
+	margin-left: 20px;
+	margin-top:  10px;
+	padding: 25px;
+}
+.folder-icon02{
+	width:  72px;
+	height: 72px;
+	position:absolute;
+	float: left;
+	margin-left: 180px;
+	margin-top:  10px;
+	padding: 25px;
+}
+.folder-icon03{
+	width:  72px;
+	height: 72px;
+	position:absolute;
+	float: left;
+	margin-left: 340px;
+	margin-top:  10px;
+	padding: 25px;
+}
+.folder-icon04{
+	width:  72px;
+	height: 72px;
+	position:absolute;
+	float: left;
+	margin-left: 480px;
+	margin-top:  10px;
+	padding: 25px;
+}
+.folder-icon05{
+	width:  72px;
+	height: 72px;
+	position:absolute;
+	float: left;
+	margin-left: 20px;
+	margin-top:  150px;
+	padding: 25px;
+}
+.folder-icon06{
+	width:  72px;
+	height: 72px;
+	position:absolute;
+	float: left;
+	margin-left: 180px;
+	margin-top:  150px;
+	padding: 25px;
+}
+.folder-icon07{
+	width:  72px;
+	height: 72px;
+	position:absolute;
+	float: left;
+	margin-left: 340px;
+	margin-top:  150px;
+	padding: 25px;
+}
+.folder-icon08{
+	width:  72px;
+	height: 72px;
+	position:absolute;
+	float: left;
+	margin-left: 500px;
+	margin-top:  150px;
+	padding: 25px;
+}
+.a01{
+	font-family:Ubuntu, Roboto; 
+	font-size: 19px;
+	color: black;
+	position:absolute;
+	margin-left: 17px;
+	margin-top:  10px;
+} 
+.a02{
+	font-family:Ubuntu, Roboto; 
+	font-size: 19px;
+	color: black;
+	position:absolute;
+	margin-left: 17px;
+	margin-top:  10px;
+}
+.a03{
+	font-family:Ubuntu, Roboto; 
+	font-size: 19px;
+	color: black;
+	position:absolute;
+	margin-left: 17px;
+	margin-top:  10px;
+}
+.a04{
+	font-family:Ubuntu, Roboto; 
+	font-size: 19px;
+	color: black;
+	position:absolute;
+	margin-left: 30px;
+	margin-top:  10px;
+}
+.a05{
+	font-family:Ubuntu, Roboto; 
+	font-size: 19px;
+	color: black;
+	position:absolute;
+	margin-left: 17px;
+	margin-top:  10px;
+}
+.a06{
+	font-family:Ubuntu, Roboto; 
+	font-size: 19px;
+	color: black;
+	position:absolute;
+	margin-left: 17px;
+	margin-top:  10px;
+}
+.a07{
+	font-family:Ubuntu, Roboto; 
+	font-size: 19px;
+	color: black;
+	position:absolute;
+	margin-left: 17px;
+	margin-top:  10px;
+}
+.a08{
+	font-family:Ubuntu, Roboto; 
+	font-size: 19px;
+	color: black;
+	position:absolute;
+	margin-left: 17px;
+	margin-top:  10px;
+}
+.fa-home{
+	margin-left: 950px;
+        margin-top:   20px;
+	font-size:    21px;
+	font-weight: bold;
+	color: mediumblue;
+ 	opacity:0.1;
+}
+.fa-home:hover{
+	margin-left: 950px;
+	margin-top:   20px;
+	font-size:    21px;
+	font-weight: bold;
+	color:    mediumslateblue;
+	text-decoration: underline;
+	opacity: 1.0;
+}
+.bar-max-min_txt{
+	font-family: Ubuntu, Roboto;
+	font-size:   17px;
+	margin-left:  40%;
+	margin-top: 3px;
+}

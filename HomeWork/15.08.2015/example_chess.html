@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+
+<style>
+
+* {
+	margin:0;
+	padding:0;
+}
+
+#chess {
+	width:850px;
+	margin:10px auto;
+}
+
+#chess ul {
+	clear:both;
+}
+
+#chess li {
+	float:left;
+	width:100px;
+	height:100px;
+	text-align:center;
+	list-style:none;
+	line-height:50px;
+	font-size:22px;
+	background:#d9b489;
+	position:relative;
+}
+
+#chess li.dark {
+	background:#604423;
+	position:relative;
+}
+.D_let{
+	text-decoration: none;
+	color: #000;
+}
+.D_let:hover{
+	text-decoration: underline;
+	color: #008;
+	font-weight: bold;
+	font-size: 27px;
+}
+#chess li.letter {
+	height:49px;
+	border-bottom:1px solid #412E18;
+	position:relative;
+}
+#chess li.letter:nth-child(2):hover {
+	color: #008;
+	font-weight: bold;
+	font-size:27px;
+	text-decoration: underline;
+	background-image:url(chess_part.png);
+	z-index: 9999;
+	position:relative;
+}
+#chess li.letter:first-child {
+	height:49px;
+	width:49px;
+}
+
+#chess li.number {
+	width:49px;
+	line-height:100px;
+	border-right:1px solid #412E18;
+}
+
+#chess li.figure {
+	background-image:url(chess.png);
+}
+
+#chess li.w_spawn {
+	background-position:-500px 0;
+}
+
+#chess li.w_tower {
+	background-position:-400px 0;
+}
+
+#chess li.w_knight {
+	background-position:-300px 0;
+}
+
+#chess li.w_bishop {
+	background-position:-200px 0;
+}
+
+#chess li.w_quin {
+	background-position:-100px 0;
+}
+
+#chess li.w_king {
+	background-position:0 0;
+}
+
+
+
+#chess li.b_spawn {
+	background-position:-500px -100px;
+}
+
+#chess li.b_tower {
+	background-position:-400px -100px;
+}
+
+#chess li.b_knight {
+	background-position:-300px -100px;
+}
+
+#chess li.b_bishop {
+	background-position:-200px -100px;
+}
+
+#chess li.b_quin {
+	background-position:-100px -100px;
+}
+
+#chess li.b_king {
+	background-position:0 -100px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="chess">
+    
+        <script>
+			
+			var letters = ['','A','B','C','<a class="D_let" href="../../../../index.html">D</a>','E','F','G','H'];
+			
+			var markup = "";
+			
+			for(i=0; i<9; i++){
+				markup += "<ul>";
+				for(j=0; j<9; j++){
+					//первая строка - буквы
+					if(i==0) {
+						markup+="<li class='letter'>" + letters[j] + "</li>";
+					}
+					//первая колонка каждой строки, кроме первой - цифры
+					else if (i!=0 && j==0){
+						markup+="<li class='number'>" + (9-i) + "</li>";
+					}
+					//чёрная пешка №1
+					else if(i==2 && (j==6)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_spawn'></li>";
+						} else {
+							markup+="<li class='dark figure b_spawn'></li>";
+						}
+					}
+					//чёрная пешка №3
+					else if(i==2 && (j==7)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_spawn'></li>";
+						} else {
+							markup+="<li class='dark figure b_spawn'></li>";
+						}
+					}
+					//чёрная пешка №4
+					else if(i==2 && (j==8)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_spawn'></li>";
+						} else {
+							markup+="<li class='dark figure b_spawn'></li>";
+						}
+					}
+					//чёрная пушка №5
+					else if(i==3 && (j==5)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_spawn'></li>";
+						} else {
+							markup+="<li class='dark figure b_spawn'></li>";
+						}
+					}
+					//белая пешка №1
+					else if(i==7 && (j==8)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure w_spawn'></li>";
+						} else {
+							markup+="<li class='dark figure w_spawn'></li>";
+						}
+					}
+					//белая пешка №2
+					else if(i==5 && (j==3)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure w_spawn'></li>";
+						} else {
+							markup+="<li class='dark figure w_spawn'></li>";
+						}
+					}
+					//чёрная пeшка №4
+					else if(i==7 && (j==7)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_spawn'></li>";
+						} else {
+							markup+="<li class='dark figure b_spawn'></li>";
+						}
+					}
+					//чёрный слон(офицер)№1
+					else if(i==5 && (j==4)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_bishop'></li>";
+						} else {
+							markup+="<li class='dark figure b_bishop'></li>";
+						}
+					}
+					//чёрный слон(офицер)№2
+					else if(i==1 && (j==1)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_bishop'></li>";
+						} else {
+							markup+="<li class='dark figure b_bishop'></li>";
+						}
+					}
+					//белый слон(офицер)№1
+					else if(i==1 && (j==6)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure w_bishop'></li>";
+						} else {
+							markup+="<li class='dark figure w_bishop'></li>";
+						}
+					}
+					//белый слон(офицер)№2
+					else if(i==6 && (j==2)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure w_bishop'></li>";
+						} else {
+							markup+="<li class='dark figure w_bishop'></li>";
+						}
+					}
+					//чёрный конь
+					else if(i==5 && (j==6)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_knight'></li>";
+						} else {
+							markup+="<li class='dark figure b_knight'></li>";
+						}
+					}
+					//белый конь
+					else if(i==7 && (j==1)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure w_knight'></li>";
+						} else {
+							markup+="<li class='dark figure w_knight'></li>";
+						}
+					}
+					/*чёрная ладья
+					else if(i==1 && (j==1 || j==8)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_tower'></li>";
+						} else {
+							markup+="<li class='dark figure b_tower'></li>";
+						}
+					}
+					*/
+					//белая ладья
+					else if(i==8 && (j==2)){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure w_tower'></li>";
+						} else {
+							markup+="<li class='dark figure w_tower'></li>";
+						}
+					}
+					/*чёрная королева
+					else if(i==1 && j==4){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_quin'></li>";
+						} else {
+							markup+="<li class='dark figure b_quin'></li>";
+						}
+					}
+					*/
+					//чёрный король
+					else if(i==1 && j==7){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure b_king'></li>";
+						} else {
+							markup+="<li class='dark figure b_king'></li>";
+						}
+					}
+					//белая королева
+					else if(i==7 && j==6){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure w_quin'></li>";
+						} else {
+							markup+="<li class='dark figure w_quin'></li>";
+						}
+					}
+					//белый король
+					else if(i==8 && j==7){
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li class='figure w_king'></li>";
+						} else {
+							markup+="<li class='dark figure w_king'></li>";
+						}
+					}
+					//пустые ячейки
+					else {
+						if((i%2==0 && j%2==0) || (i%2!=0 && j%2!=0)) {
+							markup+="<li></li>";
+						} else {
+							markup+="<li class='dark'></li>";
+						}
+					}
+				}
+				markup += "</ul>";
+			}
+			
+			document.write(markup);
+			
+		</script>
+        
+    </div>
+
+</body>
+</html>

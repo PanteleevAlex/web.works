@@ -1,0 +1,113 @@
+.clearfix{
+	clear:both;	
+}
+.block_body{
+	width:   1200px;
+	height:  auto;
+	border:  1px solid black;
+	margin:  0 auto;
+	box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+.block_header{
+	width: 1200px;
+	height: 0 auto;
+	border:1px solid black;
+}
+
+       /*начало блока content с текстом и слайдшоу*/
+
+.block_content{
+	width: 800px;
+	height:400px;
+	margin-left: 200px;
+	border:1px solid black;
+} 
+h2{
+	font-family: Ubuntu, Roboto, Arial;
+	color: #38b3e8;
+	margin-top: 40px;
+	margin-left: 490px
+}
+.h2_p{
+	width:600px;
+	height:100px;
+	margin-top: 50px;
+	margin-left: 300px;
+	font-family: Ubuntu, Roboto, Arial;
+}
+
+       /*здесь заканчивается блок content*/
+
+/*начало верхнего блока header*/
+
+.header_top_block{
+	width:  1200px;
+	height: 170px;
+	background-position: center bottom;
+	background-image:url(../img/logo.png);
+	background-repeat:no-repeat;
+}
+.header_img{
+	background-image:url(../img/home1.jpg);
+	background-position:center;
+	width:  1200px;
+	height: 130px;
+}
+.header_left{
+	width: 478px;
+	height: 170;
+	float: left;
+}
+.header_right{
+	width: 520px;
+	height: 170;
+	float: right;
+}
+.header_left_ul li{
+	font: 16px Ubuntu, Roboto, Arial;
+	float: right;
+	margin-top: 140px;
+	padding-right: 40px;
+	color: #38b3e8;
+}
+.header_right_ul li{
+	font: 16px Ubuntu, Roboto, Arial;
+	float: left;
+	margin-top: 140px;
+	padding-left: 50px;
+	color: #38b3e8;
+}
+.header_left_ul a{
+	font: 16px Ubuntu, Roboto, Arial;
+	color: #838080;
+	text-decoration: none;
+}
+.header_left_ul a:hover{
+	color: #38b3e8;	
+	text-decoration: none;
+}
+.header_right_ul a{
+	font: 16px Ubuntu, Roboto, Arial;
+	color: #838080;
+	text-decoration: none;
+}
+.header_right_ul a:hover{
+	color: #38b3e8;	
+	text-decoration: none;
+}
+.call{
+	position: absolute;
+	width: 170px;
+	height: 30px;
+	margin-top: 15px;
+	margin-left: 130px;
+	float: left;
+	font: 12px Ubuntu, Roboto, Arial;
+	color: #38b3e8;
+}
+.block_footer{
+	width: 1200px;
+	height: 250px;
+	margin-top: 10px;
+	border: 1px solid black;
+}

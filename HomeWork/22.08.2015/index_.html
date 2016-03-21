@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset-"utf-8">
+<!--		<link href="style.css" rel="stylesheet" type="text/css">-->
+		<title>Цикл while</title>
+<style>
+#frame {
+	width:800px;
+	height:600px;
+	border:1px solid #999;
+	position:relative;
+	margin:20px auto;
+}
+
+#ball {
+	background: url(ball.png);
+	background-size:cover;
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+a{
+	margin-left: 290px;
+	opacity: 0.2;
+}
+
+a:hover{
+	margin-left: 290px;
+	opacity: 1.0;
+}
+</style>
+	</head>
+	<body>
+<!--
+/* дана арифметическая прогрессия чисел - 1,3,5,7,...,n. Нужно посчитать сумму всех чисел и вывести на экран. Кол-во чисел должно быть больше 20. Надеюсь на помощь. Заранее спасибо. */
+-->
+<div id="frame">
+		<a href="../../../../index.html"><b>| НА ГЛАВНУЮ |</b></a>
+	<div id="ball"></div>
+</div>
+<script>
+		var ball = document.getElementById('ball');
+		var frame = document.getElementById('frame');
+var x=0;
+function move(){
+	x+=5;
+	ball.style.left = x + "px";
+	setTimeout(move, 50);
+}
+	move();
+</script>
+	</body>
+</html>

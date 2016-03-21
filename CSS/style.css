@@ -1,0 +1,101 @@
+/* 
+ * css файл главной стнаници 
+*/
+
+#block-body{
+	width:   1200px;
+	height:  auto;
+	margin:  0 auto;
+}
+#block-header{
+	width:  1200px;
+	height: 200px;
+	background: #6D484E;
+	border-bottom: 3px solid black;
+}	
+#block-header p:first-child{
+	font-family: Roboto;
+	font-size:   30px;
+	color:	     cadetblue;
+	text-align: center;
+	margin-top: 20px;
+}
+.html{
+	font-family: Ubuntu, Arial;
+	font-size:  40px;
+	color:      midnightblue;
+	text-align: center;
+}
+#block-header p:nth-child(3){
+	font-family: Ubuntu, Arial;
+	font-size:   40px;
+	color:       lightgray;
+	text-align: center;
+}
+#block-right{
+	width:  297px;
+	height: 500px;
+	float:  right;
+	background-image: url(/images/background_right.png);
+}
+#block-content{
+	width:  900px;
+	height: 500px;
+	background:     #03472F;
+}
+#block-footer{
+	width:    1200px;
+	height:    160px;
+	margin-top: 10px;
+	clear:             both;
+	background:     #3211A8;
+}
+.ifu{
+	font-family: Roboto;
+	font-size:   30px;
+	color:	     cadetblue;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: bold;
+	font-weight: bold;
+}
+.JavaScript{
+	font-family: Roboto;
+        font-size:   30px;
+        margin-left: 520px;
+        font-weight: bold;
+	color: transparent;
+	-webkit-text-stroke: 1px white;
+	text-stroke: 1px white;
+}
+
+.JavaScript:hover{
+	font-family: Roboto;
+        font-size:   35px;
+	text-shadow: #eee 1px -1px 1px;
+        color:	     dimgray;
+        margin-left: 500px;
+        font-weight: bold;
+}
+.menu_item{
+	box-shadow: #0f0f0f 0 0 20px;
+}
+a{
+	color: #1E90FF;
+	text-shadow: #000 0 1px 0;
+}
+a:hover{
+	color: navy;
+	text-shadow: #000 0 0 1px;  
+}
+.nax {
+	text-decoration: none;
+	color: transparent;
+	
+}
+.month{
+	text-shadow: #000 0 1px 0;
+}
+.month:hover{
+	text-shadow: #ccc 0 0 3px;
+}

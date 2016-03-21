@@ -1,0 +1,42 @@
+<!--
+Второе задание из учебника.
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jump for Joy</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+	<a href="../index.html"> | НА ГЛАВНУЮ |</a> <br>
+<div id="header">
+	<h2> Jump for Joy Sale</h2>
+</div>
+	<div id="main">
+		<div class="guess_box"><img src="jump1.jpg"></div>
+		<div class="guess_box"><img src="jump2.jpg"></div>
+		<div class="guess_box"><img src="jump3.jpg"></div>
+		<div class="guess_box"><img src="jump4.jpg"></div>
+		<br>
+		<p>jQuery lets me add stuff onto my web page without having to reload it. </p>
+		<br>
+		<br>
+	</div>
+		<script src="jquery-2.1.4.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(".guess_box").click(function(){
+			$(".guess_box p").remove();
+			$("strong").remove();<!--/*дописал сам вне урока и методом тыка выбрал именно эту сроку.*/-->
+var discount = Math.floor((Math.random()*5) + 5);
+var discount_msg = "<p>Your Discount is "+ discount +"%</p>";
+$("p").append("<strong>Like me, for instance.</strong>");
+$(".guess_box").append(discount_msg);
+		alert(discount);
+		$(this).append(discount_msg);
+
+	});//end click function
+	});//end doc ready
+</script>
+</body>
+</html>
